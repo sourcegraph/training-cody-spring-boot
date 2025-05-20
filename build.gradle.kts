@@ -35,9 +35,12 @@ dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
     // This dependency is used by the application.
     implementation(libs.guava)
 
+    // Add the Spring Security Test dependency
+    testImplementation("org.springframework.security:spring-security-test")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -90,12 +93,23 @@ sourceSets {
         compileClasspath += sourceSets["openapi"].output
         runtimeClasspath += sourceSets["openapi"].output
     }
+
+    // Add this block to make openapi sources available to tests
+    test {
+        compileClasspath += sourceSets["openapi"].output
+        runtimeClasspath += sourceSets["openapi"].output
+    }
 }
 
 // Configure openapi source set to have the same dependencies as main
 configurations {
     val openapiImplementation by getting {
         extendsFrom(configurations.implementation.get())
+    }
+
+    // Add this to ensure test configuration extends from openapi
+    testImplementation {
+        extendsFrom(configurations["openapiImplementation"])
     }
 }
 
