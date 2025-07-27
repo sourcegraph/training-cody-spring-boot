@@ -5,7 +5,7 @@
 guava = "33.3.1-jre"
 junit-jupiter = "5.11.3"
 spring-boot = "3.4.3"
-jackson = "2.16.1"
+jackson = "2.19.2"
 jakarta-annotation = "2.1.1"
 openapitools-jackson-nullable = "0.2.6"
 
