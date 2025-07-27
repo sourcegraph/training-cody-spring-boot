@@ -1,7 +1,7 @@
 plugins {
     application
     id("org.openapi.generator") version "7.10.0"
-    id("org.springframework.boot") version "3.4.3"
+    id("org.springframework.boot") version "3.5.4"
 }
 
 apply(plugin = "io.spring.dependency-management")
@@ -16,7 +16,7 @@ dependencies {
     implementation(libs.spring.boot.starter.web)
     implementation(libs.spring.boot.starter.webflux)
     implementation(libs.spring.boot.starter.security)
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.4.3")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.5.4")
     runtimeOnly("com.h2database:h2:2.2.224")
     testImplementation(libs.spring.boot.starter.test)
 
