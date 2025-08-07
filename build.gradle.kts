@@ -20,6 +20,9 @@ dependencies {
     runtimeOnly("com.h2database:h2:2.2.224")
     testImplementation(libs.spring.boot.starter.test)
 
+    // SpringDoc OpenAPI 3 support
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+
     // Jackson dependencies - required for OpenAPI client
     implementation(libs.jackson.databind)
     implementation(libs.jackson.datatype.jsr310)
