@@ -29,4 +29,4 @@ jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref
 jakarta-annotation-api = { module = "jakarta.annotation:jakarta.annotation-api", version.ref = "jakarta-annotation" }
 
 # OpenAPI tools dependencies
-openapitools-jackson-nullable = { module = "org.openapitools:jackson-databind-nullable", version = "0.2.6" }
+openapitools-jackson-nullable = { module = "org.openapitools:jackson-databind-nullable", version = "0.2.11" }
