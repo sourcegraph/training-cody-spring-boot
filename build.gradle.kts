@@ -1,6 +1,6 @@
 plugins {
     application
-    id("org.openapi.generator") version "7.10.0"
+    id("org.openapi.generator") version "7.25.0"
     id("org.springframework.boot") version "3.4.3"
 }
 
