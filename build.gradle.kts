@@ -17,7 +17,7 @@ dependencies {
     implementation(libs.spring.boot.starter.webflux)
     implementation(libs.spring.boot.starter.security)
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.4.3")
-    runtimeOnly("com.h2database:h2:2.2.224")
+    runtimeOnly("com.h2database:h2:2.5.250")
     testImplementation(libs.spring.boot.starter.test)
 
     // SpringDoc OpenAPI 3 support
