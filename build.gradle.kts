@@ -21,7 +21,7 @@ dependencies {
     testImplementation(libs.spring.boot.starter.test)
 
     // SpringDoc OpenAPI 3 support
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.9.1")
 
     // Jackson dependencies - required for OpenAPI client
     implementation(libs.jackson.databind)
